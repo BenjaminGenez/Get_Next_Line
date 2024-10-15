@@ -1,3 +1,15 @@
+/* ************************************************************************** */
+/*                                                                            */
+/*                                                        :::      ::::::::   */
+/*   get_next_line_utils.c                              :+:      :+:    :+:   */
+/*                                                    +:+ +:+         +:+     */
+/*   By: igenez-y <igenez-y@student.42madrid.c      +#+  +:+       +#+        */
+/*                                                +#+#+#+#+#+   +#+           */
+/*   Created: 2024/10/09 11:42:10 by igenez-y          #+#    #+#             */
+/*   Updated: 2024/10/15 16:04:54 by igenez-y         ###   ########.fr       */
+/*                                                                            */
+/* ************************************************************************** */
+
 #include "get_next_line.h"
 
 char	*ft_substr(char const *s, unsigned int start, size_t len)
@@ -24,25 +36,25 @@ char	*ft_substr(char const *s, unsigned int start, size_t len)
 	return (str);
 }
 
-int	ft_strlen(const char *str)
+size_t	ft_strlen(const char *s)
 {
 	int	i;
 
 	i = 0;
-	while (str[i])
+	while (s[i])
 		i++;
 	return (i);
 }
 
-char	*ft_strchr(const char *s, int i)
+char	*ft_strchr(const char *s, int c)
 {
 	while (*s)
 	{
-		if (*s == i)
+		if (*s == c)
 			return ((char *)s);
 		s++;
 	}
-	if (i == '\0')
+	if (c == '\0')
 		return ((char *)s);
 	return (0);
 }
