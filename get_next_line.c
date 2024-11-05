@@ -77,7 +77,8 @@ char	*get_next_line(int fd)
 	buffer = extract(final_line);
 	return (final_line);
 }
-/*
+
+//this is a comment.
 int	main(void)
 {
 	int fd = open("test.txt", O_RDONLY);
@@ -97,4 +98,4 @@ int	main(void)
 	close(fd);
 	return 0;
 
-}*/
+}

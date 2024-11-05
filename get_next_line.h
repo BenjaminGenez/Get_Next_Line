@@ -15,8 +15,8 @@
 # define BUFFER_SIZE 1024
 # include <stdlib.h>
 # include <unistd.h>
-//# include <stdio.h>
-//# include <fcntl.h>
+# include <stdio.h>
+# include <fcntl.h>
 
 char	*ft_substr(char const *s, unsigned int start, size_t len);
 size_t	ft_strlen(const char *s);
